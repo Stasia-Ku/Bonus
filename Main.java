@@ -4,8 +4,10 @@ public class Main {
         float additionaltValue = 1100.0f;
         int bonusValue = 100;
 
-        float resultValue = currientValue + additionaltValue + additionaltValue/bonusValue;
+        int bonusResult = (int) additionaltValue / bonusValue;
 
-        System.out.printf("Счет абонента после пополнения на %.2f с учетом бонусов: %.2f\n", additionaltValue, resultValue);
+        float resultValue = currientValue + additionaltValue + bonusResult;
+
+        System.out.printf("Счет абонента после пополнения на %.2f с учетом %d бонусов: %.2f\n", additionaltValue, bonusResult, resultValue);
     }
 }
